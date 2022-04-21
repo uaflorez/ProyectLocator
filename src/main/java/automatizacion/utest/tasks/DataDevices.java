@@ -7,38 +7,37 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
 import java.util.List;
 
 public class DataDevices implements Task {
 
-    private List<PageUtestDatos> datos;
+    private List<PageUtestDatos> data;
 
-    public DataDevices(List<PageUtestDatos> datos) {
-        this.datos = datos;
+    public DataDevices(List<PageUtestDatos> data) {
+        this.data = data;
     }
 
 
-    public static DataDevices thePage(List<PageUtestDatos> datos) {
+    public static DataDevices thePage(List<PageUtestDatos> data) {
 
-        return Tasks.instrumented(DataDevices.class, datos);
+        return Tasks.instrumented(DataDevices.class, data);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(UtestDevicesPage.GLOBAL_PHONE),
-                Enter.theValue(datos.get(0).getStrPhone()).into(UtestDevicesPage.SELECT_PHONE)
+                Enter.theValue(data.get(0).getStrPhone()).into(UtestDevicesPage.SELECT_PHONE)
                         .thenHit(Keys.ARROW_DOWN,Keys.ENTER),
 
                 Click.on(UtestDevicesPage.GLOBAL_MODEL),
-                Enter.theValue(datos.get(0).getStrModel()).into(UtestDevicesPage.SELECT_MODEL)
+                Enter.theValue(data.get(0).getStrModel()).into(UtestDevicesPage.SELECT_MODEL)
                         .thenHit(Keys.ARROW_DOWN,Keys.ENTER),
 
                 Click.on(UtestDevicesPage.GLOBAL_SO),
-                Enter.theValue(datos.get(0).getStrOperatingSystem()).into(UtestDevicesPage.OPERATING_SYSTEM)
+                Enter.theValue(data.get(0).getStrOperatingSystem()).into(UtestDevicesPage.OPERATING_SYSTEM)
                         .thenHit(Keys.ARROW_DOWN,Keys.ENTER),
 
                 Click.on(UtestDevicesPage.BUTTON_LAST_STEP)

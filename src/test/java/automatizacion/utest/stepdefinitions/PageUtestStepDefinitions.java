@@ -1,14 +1,13 @@
 package automatizacion.utest.stepdefinitions;
 
 import automatizacion.utest.model.PageUtestDatos;
-import automatizacion.utest.tasks.DataDevices;
-import automatizacion.utest.tasks.Location;
-import automatizacion.utest.tasks.Login;
-import automatizacion.utest.tasks.OpenUp;
+import automatizacion.utest.questions.UtestResponse;
+import automatizacion.utest.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -26,17 +25,19 @@ public class PageUtestStepDefinitions {
     }
 
     @When("^he register can navegation in platform$")
-    public void heRegisterCanNavegationInPlatform(List<PageUtestDatos> datos) throws Exception {
+    public void heRegisterCanNavegationInPlatform(List<PageUtestDatos> data) throws Exception {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                Login.thePage(datos),
-                Location.thePage(datos),
-                DataDevices.thePage(datos)
+                Login.thePage(data),
+                Location.thePage(data),
+                DataDevices.thePage(data),
+                LastStep.thePage(data)
         );
 
     }
 
     @Then("^can see your activity$")
-    public void canSeeYourActivity() {
+    public void canSeeYourActivity(List<PageUtestDatos> data) throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(UtestResponse.theData(data)));
 
     }
 }

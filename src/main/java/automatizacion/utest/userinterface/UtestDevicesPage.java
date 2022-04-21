@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class UtestDevicesPage extends PageObject {
 
     public static final Target GLOBAL_PHONE = Target.the("Global phone")
-            .located(By.className("//div[@id='mobile-device']/div[1]/div[2]/div"));
+            .located(By.xpath("//div[@id='mobile-device']/div[1]/div[2]/div"));
 
     public static final Target SELECT_PHONE = Target.the("Your device brand")
             .located(By.xpath("//div[@id='mobile-device']/div[1]/div[2]/div/input"));
