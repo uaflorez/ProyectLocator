@@ -5,9 +5,6 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class UtestLoginPage extends PageObject {
-
-    public static final Target LOGIN_BUTTON = Target.the("button for entry")
-            .located(By.xpath("//a[@class='unauthenticated-nav-bar__sign-up']"));
     public static final Target INPUT_FIRST_NAME = Target.the("Input for name")
             .located(By.id("firstName"));
     public static final Target INPUT_LAST_NAME = Target.the("Input for last name")
@@ -20,6 +17,6 @@ public class UtestLoginPage extends PageObject {
             .located(By.id("birthDay"));
     public static final Target YEAR_BIRTH = Target.the("Select year")
             .located(By.id("birthYear"));
-    public static final Target BUTTON_NEXT = Target.the("Button next")
+    public static final Target BUTTON_LOCATION = Target.the("Button next")
             .located(By.xpath("//a[@class='btn btn-blue']//span[contains(text(),'Next: Location')]"));
 }
