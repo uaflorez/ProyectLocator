@@ -15,26 +15,26 @@ import java.util.List;
 
 public class Location implements Task {
 
-    private List<PageUtestDatos> datos;
+    private List<PageUtestDatos> data;
 
-    public Location(List<PageUtestDatos> datos) {
-        this.datos = datos;
+    public Location(List<PageUtestDatos> data) {
+        this.data = data;
     }
 
-    public static Location thePage(List<PageUtestDatos> datos) {
+    public static Location thePage(List<PageUtestDatos> data) {
 
-        return Tasks.instrumented(Location.class, datos);
+        return Tasks.instrumented(Location.class, data);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(datos.get(0).getStrCity()).into(UtestLocationPage.INPUT_CITY),
+                Enter.theValue(data.get(0).getStrCity()).into(UtestLocationPage.INPUT_CITY),
                 Hit.the(Keys.ARROW_DOWN).into(UtestLocationPage.INPUT_CITY),
                 Hit.the(Keys.ENTER).into(UtestLocationPage.INPUT_CITY),
-                Enter.theValue(datos.get(0).getStrPostalCode()).into(UtestLocationPage.POSTAL_CODE),
+                Enter.theValue(data.get(0).getStrPostalCode()).into(UtestLocationPage.POSTAL_CODE),
                 Click.on(UtestLocationPage.GLOBAL_COUNTRY),
-                Enter.theValue(datos.get(0).getStrCountry()).into(UtestLocationPage.SELECT_COUNTRY).thenHit(Keys.ARROW_DOWN,Keys.ENTER),
+                Enter.theValue(data.get(0).getStrCountry()).into(UtestLocationPage.SELECT_COUNTRY).thenHit(Keys.ARROW_DOWN,Keys.ENTER),
                 Click.on(UtestLocationPage.BUTTON_SECOND)
         );
     }

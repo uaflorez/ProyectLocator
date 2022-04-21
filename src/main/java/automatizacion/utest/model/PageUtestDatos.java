@@ -7,12 +7,17 @@ public class PageUtestDatos {
     private String strBirthMonth;
     private String strBirthDay;
     private String strBirthYear;
+    // ------------ location ---------
     private String strCity;
     private String strPostalCode;
     private String strCountry;
+    // --------- Devace ------------
     private String strPhone;
     private String strModel;
     private String strOperatingSystem;
+    // ------------ Last Step ---------
+    private String strPassword;
+    private String strFinalText;
 
     public String getStrNameUser() {
         return strNameUser;
@@ -108,5 +113,21 @@ public class PageUtestDatos {
 
     public void setStrOperatingSystem(String strOperatingSystem) {
         this.strOperatingSystem = strOperatingSystem;
+    }
+
+    public String getStrPassword() {
+        return strPassword;
+    }
+
+    public void setStrPassword(String strPassword) {
+        this.strPassword = strPassword;
+    }
+
+    public String getStrFinalText() {
+        return strFinalText;
+    }
+
+    public void setStrFinalText(String strConfirmPassword) {
+        this.strFinalText = strConfirmPassword;
     }
 }

@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="create new user" skipped="0" tests="1" time="31.78" timestamp="2022-04-21 03:31:33"><testcase name="register an user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-automatizacion.utest.tasks.DataDevices.performAs(DataDevices.java:31)&#13;
-automatizacion.utest.stepdefinitions.PageUtestStepDefinitions.heRegisterCanNavegationInPlatform(PageUtestStepDefinitions.java:30)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="create new user" skipped="0" tests="1" time="34.42" timestamp="2022-04-21 05:59:17"><testcase name="register an user"/></testsuite>

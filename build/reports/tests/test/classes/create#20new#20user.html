@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">32.713s</div>
+<div class="counter">35.196s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,195 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="register an user"></a>
-<h3 class="failures">register an user</h3>
-<span class="code">
-<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RQrstneb.performAs$accessor$Y4GZem8a(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RQrstneb.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at automatizacion.utest.tasks.DataDevices.performAs(DataDevices.java:31)
-	at automatizacion.utest.tasks.DataDevices$ByteBuddy$PMYyl0t9.performAs$accessor$OIkZ6sKr(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at automatizacion.utest.tasks.DataDevices$ByteBuddy$PMYyl0t9.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at automatizacion.utest.stepdefinitions.PageUtestStepDefinitions.heRegisterCanNavegationInPlatform(PageUtestStepDefinitions.java:30)
-	at ✽.he register can navegation in platform(src/test/resources/features/utestPage.feature:9)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.className: //div[@id='mobile-device']/div[1]/div[2]/div to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RQrstneb.performAs$accessor$Y4GZem8a(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RQrstneb.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at automatizacion.utest.tasks.DataDevices.performAs(DataDevices.java:31)
-	at automatizacion.utest.tasks.DataDevices$ByteBuddy$PMYyl0t9.performAs$accessor$OIkZ6sKr(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at automatizacion.utest.tasks.DataDevices$ByteBuddy$PMYyl0t9.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at automatizacion.utest.stepdefinitions.PageUtestStepDefinitions.heRegisterCanNavegationInPlatform(PageUtestStepDefinitions.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.\/\/div\[\@id\=\'mobile\-device\'\]\/div\[1\]\/div\[2\]\/div&quot;}
-  (Session info: chrome=100.0.4896.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'URIELPC', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\uriel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f9c452f254e83924321e12f31465f94
-*** Element info: {Using=class name, value=//div[@id='mobile-device']/div[1]/div[2]/div}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 98 more
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -260,122 +78,198 @@ Session ID: 0f9c452f254e83924321e12f31465f94
 </tr>
 </thead>
 <tr>
-<td class="failures">register an user</td>
-<td class="failures">32.713s</td>
-<td class="failures">failed</td>
+<td class="success">register an user</td>
+<td class="success">35.196s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3b63e923
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2af3da26
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1664743b
-abr 21, 2022 3:31:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@36dc30e2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2f9dca34
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7d5ba293
+abr 21, 2022 5:59:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 31324
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 38822
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr 21, 2022 3:31:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+abr 21, 2022 5:59:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f0d763f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@563ff7ac
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3807f93c
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@529c8799
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@62e58e66
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1af89314
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@b2e56bd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@64426202
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@765044d3
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@54b1e78d
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@44e68c83
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4328e0be
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@76f235ae
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@18dc6745
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6bf3a2a9
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@38484d49
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@38b8e1cb
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2d769b68
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1b5e2a25
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7cbf536e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next]]
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7998ed2
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6d694d29
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45115619
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@429b4501
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@72d66e95
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6ca4ee9e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@668b0e8e
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@34fe3542
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@239be874
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4bd73554
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip ]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5884f48a
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip ]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7127c97e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7f461494
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4204917a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@20dea569
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@74a7e202
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices]]
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5bd9624
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@53aa045b
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@92053ff
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@245c28a3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2cf7f761
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7abd2c85
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@33443fd2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model ]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@41fdbd9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6272cca0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3878f1d9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@165dc2f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@396e0675
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@97b6af4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5defb650
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6ec0fd23
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1da3e893
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4b27786b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@711c8b75
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1da4ef5d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27c4fd28
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]], Then can see your activity
+| strFinalText |
+| Complete Setup | [Then utest response]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]], Then can see your activity
+| strFinalText |
+| Complete Setup | [Then utest response]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone]], Then can see your activity
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]], Then can see your activity
+| strFinalText |
+| Complete Setup | [Then utest response]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone]], Then can see your activity]
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]], Then can see your activity
+| strFinalText |
+| Complete Setup | [Then utest response]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [register an user:Given than santiago need register in platform utest [Santiago open up [Santiago opens the Utest page, Santiago clicks on button for entry]], When he register can navegation in platform
-| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem |
-| Pablo | Perez | pruebas@preubas.com | May | 10 | 1980 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | [Santiago login [Santiago enters 'Pablo' into Input for name, Santiago enters 'Perez' into Input for last name, Santiago enters 'pruebas@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 10 on Select day, Santiago select 1980 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone]], Then can see your activity]
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+| strNameUser | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strPhone | strModel | strOperatingSystem | strPassword |
+| Jose | Pelaez | pruebas1@preubas.com | May | 13 | 1983 | Bogota | 110111 | Colombia | Samsung | Galaxy A | Android 7.1.1 | Prueba12123 | [Santiago login [Santiago enters 'Jose' into Input for name, Santiago enters 'Pelaez' into Input for last name, Santiago enters 'pruebas1@preubas.com' into Input for email, Santiago select May on Select month, Santiago select 13 on Select day, Santiago select 1983 on Select year, Santiago clicks on Button next], Santiago location [Santiago enters 'Bogota' into Enter the city, Santiago types 'ARROW_DOWN' in Enter the city, Santiago types 'ENTER' in Enter the city, Santiago enters '110111' into Enter the postal code or zip , Santiago clicks on Contein global of countries, Santiago enters 'Colombia' then hits ARROW_DOWN and ENTER into Select your Country, Santiago clicks on Button next devices], Santiago data devices [Santiago clicks on Global phone, Santiago enters 'Samsung' then hits ARROW_DOWN and ENTER into Your device brand, Santiago clicks on Global Model , Santiago enters 'Galaxy A' then hits ARROW_DOWN and ENTER into Your device model, Santiago clicks on Global operating system, Santiago enters 'Android 7.1.1' then hits ARROW_DOWN and ENTER into Operating system, Santiago clicks on Button last next step], Santiago last step [Santiago enters 'Prueba12123' into Create your uTest password, Santiago enters 'Prueba12123' into Confirm your password, Santiago clicks on  STAY INFORMED, Santiago clicks on uTest Terms, Santiago clicks on Privacy &amp; Security Policy, Santiago clicks on Button complete]], Then can see your activity
+| strFinalText |
+| Complete Setup | [Then utest response]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED: register an user
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Santiago clicks on Global phone
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
+TEST PASSED: register an user
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -387,7 +281,7 @@ TEST FAILED: register an user
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 21/04/2022 03:32:13 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 21/04/2022 05:59:56 PM</p>
 </div>
 </div>
 </body>
